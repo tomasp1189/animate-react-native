@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 
-const HeaderIconButton = props => {
+const IconButton = props => {
 	return (
 		<TouchableOpacity
 			onPress={() => {
@@ -14,4 +14,4 @@ const HeaderIconButton = props => {
 	);
 };
 
-export default HeaderIconButton;
+export default IconButton;

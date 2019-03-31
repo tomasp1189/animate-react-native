@@ -8,24 +8,26 @@ import {
 	View
 } from 'react-native';
 
+import IconButton from '../components/IconButton';
+
 class SecondAnimationScreen extends Component {
 	static navigationOptions = props => ({
 		title: 'Animation #2',
 		headerTintColor: '#fff',
 		headerTitleStyle: {
 			fontWeight: 'bold'
-		}
-		// headerRight: (
-		// 	<IconButton
-		// 		onPress={() => props.navigation.navigate('AnimatedTwo')}
-		// 		iconProps={{
-		// 			name: 'arrow-forward',
-		// 			color: 'white',
-		// 			iconStyle: { fontSize: 24 },
-		// 			containerStyle: { padding: 10, marginLeft: 10 }
-		// 		}}
-		// 	/>
-		//     )
+		},
+		headerRight: (
+			<IconButton
+				onPress={() => props.navigation.navigate('AnimatedThree')}
+				iconProps={{
+					name: 'arrow-forward',
+					color: 'white',
+					iconStyle: { fontSize: 24 },
+					containerStyle: { padding: 10, marginLeft: 10 }
+				}}
+			/>
+		    )
 	});
 
 	componentWillMount() {
